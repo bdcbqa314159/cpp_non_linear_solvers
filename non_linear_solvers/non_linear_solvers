@@ -3,3 +3,4 @@
 #include "includes/non_linear_solvers.hpp"
 #include "includes/Function.hpp"
 #include "includes/BisectionMethod.hpp"
+#include "includes/FalsePositionMethod.hpp"

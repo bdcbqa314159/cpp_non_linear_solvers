@@ -2,7 +2,8 @@ project(non_linear_solvers)
 
 set(includes includes/)
 set(sources src/non_linear_solvers.cpp
-            src/BisectionMethod.cpp)
+            src/BisectionMethod.cpp
+            src/FalsePositionMethod.cpp)
 
 add_library(${PROJECT_NAME} ${sources})
 target_include_directories(${PROJECT_NAME} PUBLIC ${includes})
