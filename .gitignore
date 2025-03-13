@@ -151,4 +151,3 @@ docs
 compile_commands.json
 resources
 work/*.cpp
-non_linear_solvers
