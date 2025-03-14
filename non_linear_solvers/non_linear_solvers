@@ -4,3 +4,4 @@
 #include "includes/Function.hpp"
 #include "includes/BisectionMethod.hpp"
 #include "includes/FalsePositionMethod.hpp"
+#include "includes/DekkersMethod.hpp"
