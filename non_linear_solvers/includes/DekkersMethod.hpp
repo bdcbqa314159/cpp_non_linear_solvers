@@ -1,5 +1,10 @@
-#pragma once
-#include <cstddef>
-#include "Function.hpp"
+#ifndef DEKKERS_METHOD_HPP
+#define DEKKERS_METHOD_HPP
 
-double DekkersMethod(const Function& , double , double , double = 0.00001, size_t = 100);
+#include "Function.hpp"
+#include <cstddef>
+
+double DekkersMethod(const Function &, double, double, double = 0.00001,
+                     size_t = 100);
+
+#endif // DEKKERS_METHOD_HPP
