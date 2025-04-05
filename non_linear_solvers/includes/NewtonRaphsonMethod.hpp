@@ -5,7 +5,7 @@
 #include "Function.hpp"
 #include <cstddef>
 
-double NewtonRaphsonMethod(const Function &, double, double, double = 0.0001,
+double NewtonRaphsonMethod(const FunctionC1 &, double, double, double = 0.0001,
                            size_t = 100);
 
 #endif // NEWTONRAPHSON_HPP

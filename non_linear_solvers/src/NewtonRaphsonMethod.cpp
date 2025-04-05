@@ -1,21 +1,27 @@
 #include "NewtonRaphsonMethod.hpp"
 #include <cassert>
 
-double NewtonRaphsonMethod(const Function &myFunction, double target,
+double NewtonRaphsonMethod(const FunctionC1 &myFunction, double target,
                            double guess, double epsilon, size_t maxIterations) {
 
   size_t k = 1;
 
   double x_prev = guess;
-  double x_next = x_prev - (myFunction.Value(x_prev) - target) /
-                               myFunction.Derivative(x_prev);
+  double f_x_prev = myFunction(x_prev);
+  double df_x_prev = myFunction.derivative(x_prev);
 
-  while (abs(x_next - x_prev) > epsilon && (k <= maxIterations)) {
-    x_prev = x_next;
-    x_next = x_prev - (myFunction.Value(x_prev) - target) /
-                          myFunction.Derivative(x_prev);
+  assert(df_x_prev != 0.0);
+  double x_current = x_prev - (f_x_prev - target) / df_x_prev;
+
+  while ((std::abs(x_current - x_prev) > epsilon) && (k <= maxIterations)) {
+
+    x_prev = x_current;
+    f_x_prev = myFunction(x_prev);
+    df_x_prev = myFunction.derivative(x_prev);
+
+    x_current = x_prev - (f_x_prev - target) / df_x_prev;
     k++;
   }
 
-  return x_next;
+  return x_current;
 }
