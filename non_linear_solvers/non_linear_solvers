@@ -6,6 +6,7 @@
 #include "includes/DekkersMethod.hpp"       // IWYU pragma: keep
 #include "includes/FalsePositionMethod.hpp" // IWYU pragma: keep
 #include "includes/Function.hpp"            // IWYU pragma: keep
+#include "includes/NewtonRaphsonMethod.hpp" // IWYU pragma: keep
 #include "includes/non_linear_solvers.hpp"  // IWYU pragma: keep
 
 #endif // NON_LINEAR_SOLVERS_LIBRARY_H
