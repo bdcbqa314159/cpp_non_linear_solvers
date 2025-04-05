@@ -7,6 +7,7 @@ set(sources src/non_linear_solvers.cpp
             src/DekkersMethod.cpp
             src/BrentsMethod.cpp
             src/NewtonRaphsonMethod.cpp
+            src/Function.cpp
 )
 
 add_library(${PROJECT_NAME} ${sources})
