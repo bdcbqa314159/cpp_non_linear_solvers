@@ -55,11 +55,11 @@ double DekkersMethod(const FunctionC0 &myFunction, double a, double b,
     product_1 = f_a_k * f_b_k_plus_1;
     assert(product_1 < 0.);
 
-    if (f_a_k < f_b_k_plus_1)
+    if (f_a_k < f_b_k_plus_1) {
       std::swap(a_k, b_k_plus_1);
-
-    f_b_k_plus_1 = myFunction(b_k_plus_1);
-    f_a_k = myFunction(a_k);
+      f_b_k_plus_1 = myFunction(b_k_plus_1);
+      f_a_k = myFunction(a_k);
+    }
   }
 
   return b_k_plus_1;
