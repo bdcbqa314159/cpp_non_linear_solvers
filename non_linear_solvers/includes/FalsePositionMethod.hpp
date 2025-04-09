@@ -4,6 +4,8 @@
 #include "Function.hpp"
 #include <cstddef>
 
+double secante(double, double, double, double, double);
+
 double FalsePositionMethod(const FunctionC0 &, double, double, double = 0.0001,
                            size_t = 100);
 
