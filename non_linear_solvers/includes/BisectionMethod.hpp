@@ -4,7 +4,7 @@
 #include "Function.hpp"
 #include <cstddef>
 
-double bisection(double, double);
+// double bisection(double, double);
 
 double BisectionMethod(const FunctionC0 &, double, double, double = 0.0001,
                        size_t = 100);

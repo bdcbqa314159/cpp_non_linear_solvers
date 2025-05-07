@@ -1,7 +1,8 @@
 project(non_linear_solvers)
 
 set(includes includes/)
-set(sources src/non_linear_solvers.cpp
+set(sources src/common.cpp
+            src/non_linear_solvers.cpp
             src/BisectionMethod.cpp
             src/FalsePositionMethod.cpp
             src/DekkersMethod.cpp

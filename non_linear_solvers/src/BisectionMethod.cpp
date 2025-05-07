@@ -1,9 +1,10 @@
 #include "BisectionMethod.hpp"
 #include "Function.hpp"
+#include "common.hpp"
 #include <cassert>
 #include <cmath>
 
-double bisection(double a, double b) { return a + (b - a) * 0.5; }
+// double bisection(double a, double b) { return a + (b - a) * 0.5; }
 
 double BisectionMethod(const FunctionC0 &myFunction, double a, double b,
                        double epsilon, size_t maxIterations) {
