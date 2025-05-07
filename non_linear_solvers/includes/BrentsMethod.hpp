@@ -12,4 +12,6 @@ bool useBisection(double, double, double, double, double, double, bool);
 
 double BrentsMethod(const Function &, double, double, double, size_t);
 
+double newBrentsMethod(const FunctionC0 &, double, double, double, size_t);
+
 #endif // BRENTS_METHOD_HPP
