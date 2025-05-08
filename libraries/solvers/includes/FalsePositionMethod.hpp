@@ -1,7 +1,7 @@
 #ifndef FALSE_POSITION_METHOD_HPP
 #define FALSE_POSITION_METHOD_HPP
 
-#include "Function.hpp"
+#include "utils_lib" // IWYU pragma: keep
 #include <cstddef>
 
 double secante(double, double, double, double, double);

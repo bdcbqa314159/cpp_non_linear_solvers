@@ -2,7 +2,7 @@
 #ifndef NEWTONRAPHSON_HPP
 #define NEWTONRAPHSON_HPP
 
-#include "Function.hpp"
+#include "utils_lib" // IWYU pragma: keep
 #include <cstddef>
 
 double NewtonRaphsonMethod(const FunctionC1 &, double, double, double = 0.0001,

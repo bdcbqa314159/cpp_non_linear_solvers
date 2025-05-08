@@ -1,0 +1,8 @@
+#pragma once
+#ifndef UTILS_LIB_INCLUDES
+#define UTILS_LIB_INCLUDES
+
+#include "./includes/common.hpp"    // IWYU pragma: keep
+#include "./includes/functions.hpp" // IWYU pragma: keep
+
+#endif // UTILS_LIB_INCLUDES

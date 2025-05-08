@@ -1,0 +1,11 @@
+#ifndef SOLVERS_LIB_H
+#define SOLVERS_LIB_H
+
+#include "./includes/BisectionMethod.hpp"     // IWYU pragma: keep
+#include "./includes/BrentsMethod.hpp"        // IWYU pragma: keep
+#include "./includes/DekkersMethod.hpp"       // IWYU pragma: keep
+#include "./includes/FalsePositionMethod.hpp" // IWYU pragma: keep
+
+#include "./includes/NewtonRaphsonMethod.hpp" // IWYU pragma: keep
+
+#endif // SOLVERS_LIB_H

@@ -1,5 +1,5 @@
 #include "BisectionMethod.hpp"
-#include "Function.hpp"
+// #include "Function.hpp"
 #include "common.hpp"
 #include <cassert>
 #include <cmath>

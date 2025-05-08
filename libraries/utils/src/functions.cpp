@@ -1,4 +1,4 @@
-#include "Function.hpp"
+#include "functions.hpp"
 
 FunctionC0::FunctionC0(const std::function<double(double)> &f) : f(f) {}
 double FunctionC0::operator()(double x) const { return f(x); }
