@@ -1,4 +1,5 @@
 #include "DekkersMethod.hpp"
+#include "common.hpp"
 #include <algorithm>
 #include <cassert>
 
@@ -24,11 +25,8 @@ double DekkersMethod(const FunctionC0 &myFunction, double a, double b,
 
   while ((std::abs(myFunction(b_k_plus_1)) > epsilon) && (k <= maxIterations)) {
 
-    double diff = f_b_k_plus_1 - f_b_k;
-    double inv_diff = 1. / diff;
-
-    double s_k = b_k_plus_1 - f_b_k_plus_1 * (b_k_plus_1 - b_k) * inv_diff;
-    double m = a_k + 0.5 * (b_k_plus_1 - a_k);
+    double s_k = secante(b_k, b_k_plus_1, f_b_k, f_b_k_plus_1, epsilon);
+    double m = bisection(a_k, b_k_plus_1);
 
     b_k = b_k_plus_1;
     f_b_k = myFunction(b_k);
@@ -36,6 +34,7 @@ double DekkersMethod(const FunctionC0 &myFunction, double a, double b,
     bool secant_condition = (b_k_plus_1 > m && m < s_k && s_k < b_k_plus_1) ||
                             (b_k_plus_1 < m && b_k_plus_1 < s_k && s_k < m);
 
+    // if no secant condition, use bisection
     if (secant_condition) {
       b_k_plus_1 = s_k;
     } else {
