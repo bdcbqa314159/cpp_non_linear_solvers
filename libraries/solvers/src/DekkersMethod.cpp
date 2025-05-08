@@ -1,5 +1,4 @@
 #include "DekkersMethod.hpp"
-// #include "common.hpp"
 #include <algorithm>
 #include <cassert>
 

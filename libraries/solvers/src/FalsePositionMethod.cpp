@@ -1,5 +1,4 @@
 #include "FalsePositionMethod.hpp"
-// #include "Function.hpp"
 #include "common.hpp"
 #include <cassert>
 #include <cmath>

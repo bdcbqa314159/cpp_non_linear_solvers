@@ -4,8 +4,6 @@
 #include "utils_lib" // IWYU pragma: keep
 #include <cstddef>
 
-// double bisection(double, double);
-
 double BisectionMethod(const FunctionC0 &, double, double, double = 0.0001,
                        size_t = 100);
 

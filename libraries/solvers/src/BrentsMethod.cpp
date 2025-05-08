@@ -1,5 +1,4 @@
 #include "BrentsMethod.hpp"
-// #include "common.hpp"
 #include <cassert>
 #include <cmath>
 
