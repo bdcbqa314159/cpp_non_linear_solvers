@@ -1,7 +1,7 @@
 #ifndef BISECTION_METHOD_HPP
 #define BISECTION_METHOD_HPP
 
-#include "Function.hpp"
+#include "utils_lib" // IWYU pragma: keep
 #include <cstddef>
 
 // double bisection(double, double);

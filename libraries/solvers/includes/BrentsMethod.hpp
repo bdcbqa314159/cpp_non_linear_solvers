@@ -1,6 +1,6 @@
 #ifndef BRENTS_METHOD_HPP
 #define BRENTS_METHOD_HPP
-#include "Function.hpp"
+#include "utils_lib" // IWYU pragma: keep
 
 #include <cstddef>
 

@@ -2,7 +2,7 @@
 #ifndef NON_LINEAR_SOLVERS_COMMON_HPP
 #define NON_LINEAR_SOLVERS_COMMON_HPP
 
-#include "Function.hpp"
+#include "functions.hpp"
 
 double bisection(double, double);
 

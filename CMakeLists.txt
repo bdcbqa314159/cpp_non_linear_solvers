@@ -12,7 +12,7 @@ MESSAGE(STATUS "the source directory is: ${CMAKE_SOURCE_DIR}")
 find_package(GSL REQUIRED)
 find_package(Boost REQUIRED COMPONENTS date_time)
 
-add_subdirectory(non_linear_solvers)
+add_subdirectory(libraries)
 add_subdirectory(work)
 
 
